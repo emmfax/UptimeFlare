@@ -94,7 +94,7 @@ const workerConfig: WorkerConfig = {
       timeout: 10000,
     },
     {
-      id: 'tz,
+      id: 'tz',
       name: '探针',
       method: 'HEAD',
       target: 'https://vps.faxf.de',
@@ -104,7 +104,7 @@ const workerConfig: WorkerConfig = {
       timeout: 10000,
     },
     {
-      id: 'gemini_claw,
+      id: 'gemini_claw',
       name: 'GEMINI CLAW',
       method: 'HEAD',
       target: 'https://api.111321.xyz',
