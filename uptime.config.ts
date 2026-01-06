@@ -126,7 +126,7 @@ const workerConfig: WorkerConfig = {
     {
       id: 'txt',
       name: 'TXT',
-      method: 'GET',
+      method: 'HEAD',
       target: 'https://txt.111321.xyz',
       statusPageLink: 'https://txt.111321.xyz',
       hideLatencyChart: false,
