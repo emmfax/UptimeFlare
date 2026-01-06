@@ -77,8 +77,8 @@ const workerConfig: WorkerConfig = {
       id: 'tv',
       name: 'TV',
       method: 'HEAD',
-      target: 'https://tv.faxf.de/',
-      statusPageLink: 'https://tv.faxf.de/',
+      target: 'https://tv.faxt.top/',
+      statusPageLink: 'https://tv.faxt.top/',
       hideLatencyChart: false,
       expectedCodes: [200],
       timeout: 10000,
@@ -133,14 +133,6 @@ const workerConfig: WorkerConfig = {
       expectedCodes: [200],
       timeout: 10000,
     },
-
-    {
-      id: 'hw_ssh',
-      name: 'HW SSH',
-      method: 'TCP_PING',
-      target: '123.60.66.48',
-      timeout: 5000,
-    }
   ],
   notification: {
     // [Optional] Notification webhook settings, if not specified, no notification will be sent
