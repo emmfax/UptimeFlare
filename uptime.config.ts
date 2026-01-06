@@ -76,7 +76,7 @@ const workerConfig: WorkerConfig = {
     {
       id: 'tv',
       name: 'TV',
-      method: 'HEAD',
+      method: 'GET',
       target: 'https://tv.faxt.top/',
       statusPageLink: 'https://tv.faxt.top/',
       hideLatencyChart: false,
@@ -126,7 +126,7 @@ const workerConfig: WorkerConfig = {
     {
       id: 'txt',
       name: 'TXT',
-      method: 'HEAD',
+      method: 'GET',
       target: 'https://txt.111321.xyz',
       statusPageLink: 'https://txt.111321.xyz',
       hideLatencyChart: false,
