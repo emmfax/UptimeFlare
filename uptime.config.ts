@@ -124,16 +124,6 @@ const workerConfig: WorkerConfig = {
       timeout: 10000,
     },
     {
-      id: 'txt',
-      name: 'TXT',
-      method: 'HEAD',
-      target: 'https://txt.111321.xyz',
-      statusPageLink: 'https://txt.111321.xyz',
-      hideLatencyChart: false,
-      expectedCodes: [200],
-      timeout: 10000,
-    },
-    {
       id: 'gemini_claw',
       name: 'GEMINI CLAW',
       method: 'HEAD',
