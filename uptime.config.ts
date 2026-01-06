@@ -7,7 +7,7 @@ import { MaintenanceConfig, PageConfig, WorkerConfig } from './types/config'
 
 const pageConfig: PageConfig = {
   // Title for your status page
-  title: "哈气",
+  title: "UPUP",
   // Links shown at the header of your status page, could set `highlight` to `true`
   links: [
     { link: 'https://github.com/faxlight', label: 'GitHub' },
@@ -55,7 +55,7 @@ const workerConfig: WorkerConfig = {
     // },
     {
       id: 'blog',
-      name: '博客入口（自动分流）',
+      name: 'Blog',
       method: 'HEAD',
       target: 'https://faxt.top/',
       statusPageLink: 'https://faxt.top/',
@@ -74,8 +74,18 @@ const workerConfig: WorkerConfig = {
       timeout: 10000,
     },
     {
+      id: 'tv',
+      name: 'TV',
+      method: 'HEAD',
+      target: 'https://tv.faxf.de/',
+      statusPageLink: 'https://tv.faxf.de/',
+      hideLatencyChart: false,
+      expectedCodes: [200],
+      timeout: 10000,
+    },
+    {
       id: 'imgapi',
-      name: '图API',
+      name: 'IMGAPI',
       method: 'HEAD',
       target: 'https://img.111321.xyz/',
       statusPageLink: 'https://img.111321.xyz/',
@@ -84,8 +94,18 @@ const workerConfig: WorkerConfig = {
       timeout: 10000,
     },
     {
+      id: 'tz,
+      name: '探针',
+      method: 'HEAD',
+      target: 'https://vps.faxf.de',
+      statusPageLink: 'https://vps.faxf.de',
+      hideLatencyChart: false,
+      expectedCodes: [200],
+      timeout: 10000,
+    },
+    {
       id: 'gemini_claw,
-      name: ''GEMINI CLAW',
+      name: 'GEMINI CLAW',
       method: 'HEAD',
       target: 'https://api.111321.xyz',
       statusPageLink: 'https://api.111321.xyz',
@@ -96,7 +116,7 @@ const workerConfig: WorkerConfig = {
     {
       id: 'gemini_zeabur',
       name: 'GEMINI ZEA',
-      method: 'GET',
+      method: 'HEAD',
       target: 'https://ha.111321.xyz',
       statusPageLink: 'https://ha.111321.xyz',
       hideLatencyChart: false,
@@ -104,30 +124,21 @@ const workerConfig: WorkerConfig = {
       timeout: 10000,
     },
     {
-      id: 'onedrive_index',
-      name: 'OneDrive 公开只读（Vercel）',
-      method: 'HEAD',
-      target: 'https://e3.2x.nz/',
-      statusPageLink: 'https://e3.2x.nz/',
+      id: 'subapi',
+      name: 'sb',
+      method: 'GET',
+      target: 'https://subapi.111321.xyz',
+      statusPageLink: 'https://subapi.111321.xyz',
       hideLatencyChart: false,
       expectedCodes: [200],
       timeout: 10000,
     },
+
     {
-      id: 'eo_http',
-      name: '网站安全测试（EdgeOne Pages）',
-      method: 'HEAD',
-      target: 'https://http.acofork.com/',
-      statusPageLink: 'https://http.acofork.com/',
-      hideLatencyChart: false,
-      expectedCodes: [200],
-      timeout: 10000,
-    },
-    {
-      id: 'yxvm_ssh',
-      name: 'YxVM SSH',
+      id: 'hw_ssh',
+      name: 'HW SSH',
       method: 'TCP_PING',
-      target: '46.232.60.28:22',
+      target: '123.60.66.48',
       timeout: 5000,
     }
   ],
